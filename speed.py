@@ -52,7 +52,7 @@ def send_email(data):
         print('unable to import mail username/password')
         raise
     subject = 'Warning - Bandwidth speeds are low'
-    body = 'Detected: Ping %s ms\n Download %s Mbit/s Upload %s Mbit/s' % (data['ping'],
+    body = 'Detected: Ping %s ms<br><br>Download %s Mbit/s<br><br> Upload %s Mbit/s' % (data['ping'],
                                                                            data['download'],
                                                                            data['upload'])
 
